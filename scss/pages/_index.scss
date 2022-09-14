@@ -1,0 +1,89 @@
+.body__index{
+    background-image: url('/asset/images/image-background-index.jpg');
+}
+h1{
+    text-align: center;
+    font-size: 65px;
+    background: linear-gradient(rgba(252, 252, 252, 0.9), rgba(209, 209, 209, 0.1));
+    color: #3f041c;
+    font-family: 'Tiro Tamil', serif;
+    margin-bottom: 15px;
+}
+.grid__container{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "slider"
+    "footer";
+
+    &-main{
+        grid-area: main;
+    }
+    &-slider{
+        grid-area: slider;
+        background-color: $primary;
+        color: #fff;
+        text-align: center;
+        height: 200px;
+    }
+    &-footer{
+        grid-area: footer;
+    }
+}
+.galery{
+    display: flex;
+    justify-content: center;
+
+    &__column{
+        width: 90%;
+        min-width: 320px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    
+        &-item{
+            width: 45%;
+            height: 25vh;
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            text-shadow: 1px 1px #1C1C1C;
+            margin: 5px;
+            border: 1px solid rgba(63, 63, 63, 0.6);
+            border-radius: 5px;
+            text-align: center;
+            font-family: 'Mukta', sans-serif;
+            transition: all 0.3s;
+           
+            &:hover{
+                transform: scale(1.03);
+            }
+            h3{
+                background: linear-gradient(#000, rgba(0, 0, 0, 0) 25px);
+            }
+        }
+    }
+}
+
+.item-1{
+    background-image: url('/asset/images/inicio1.jfif');
+}
+.item-2{
+    background-image: url('/asset/images/inicio2.jfif');
+}
+.item-3{
+    background-image: url('/asset/images/inicio3.jfif');
+}
+.item-4{
+    background-image: url('/asset/images/inicio4.jpg');
+}
+.item-5{
+    background-image: url('/asset/images/inicio5.jpg');
+}
+.item-6{
+    background-image: url('/asset/images/inicio6.jpg');
+}
+.item-7{
+    background-image: url('/asset/images/inicio7.jpg');
+}

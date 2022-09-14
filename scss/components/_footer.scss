@@ -1,0 +1,42 @@
+footer{
+    background-color: #2E2E2E;
+    font-family: 'Manrope', sans-serif;
+}
+.foot{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.foot__title{
+    color: #fff;
+    text-align: center;
+}
+.foot__redes{
+    display: flex;
+    padding-bottom: 30px;
+}
+.foot__redes img{
+    width: 40px;
+    height: 40px;
+    margin: 30px;
+}
+.foot__info{
+    color: #fff;
+    text-align: center;
+    padding-top: 15px;
+}
+.foot__info-links{
+    padding-bottom: 30px;
+}
+.foot__info-links li{
+    margin: 15px;
+}
+.foot__info-links a{
+    text-decoration: none;
+    color: #fff;
+}
+.foot__derechos{
+    background-color: #1C1C1C;
+    text-align: center;
+    color: #fff;
+}

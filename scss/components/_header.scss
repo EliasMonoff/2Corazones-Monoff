@@ -1,0 +1,48 @@
+.grid__container-header{
+    grid-area: header;
+    background-color: rgb(17, 67, 133);
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1;
+    height: auto;
+    min-height: 7vh;
+    min-width: 320px;
+}
+.grid__container-logo{
+    height: 80px;
+}
+.grid__container-nav ul{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.grid__container-nav ul li a{
+    font-family: sans-serif;
+    text-decoration: none;
+    background-color: white;
+    padding: 8px;
+    color: rgba(227, 15, 15, 0.945);
+    border-radius: 16px;
+    font-size: 24px;
+    margin-left: 24px;
+    transition: all 0.3s;
+}
+.grid__container-nav ul li a:hover{
+    background-color: #767272;
+}
+.grid__container-finish a img{
+    height: 70px;
+    width: 70px;
+}
+.grid__container-burger{
+    background: none;
+    border: none;
+}
+.grid__container-burger img{
+    height: 20px;
+    width: 20px;
+    display: none;
+}

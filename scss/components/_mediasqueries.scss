@@ -1,0 +1,138 @@
+@media (max-width: 1124px){
+    .grid__container-header{
+        height: 60px;
+        justify-content: space-between;
+    }
+    .grid__container-logo{
+        height: 60px;
+        padding: 0 40px;
+    }
+    .grid__container-nav, .grid__container-finish{
+        display: none;
+    }
+    .grid__container-burger{
+        background: none;
+        border: none;
+        padding: 0 40px;
+    }
+    .grid__container-burger img{
+        height: 20px;
+        width: 20px;
+        display: block;
+    }
+    h1{
+        font-size: 50px;
+    }
+    .galery__column-item{
+        width: 90%;
+    }
+}
+@media (max-width: 768px) {
+    .grid__container-header{
+        height: 40px;
+    }
+    .grid__container-logo{
+        height: 40px;
+    }
+    h1{
+        font-size: 40px;
+    }
+    .foot__title{
+        padding-top: 0px;
+    }
+    .foot__redes img{
+        width: 30px;
+        height: 30px;
+        margin: 20px;
+    }
+    .foot__info-links{
+        padding-bottom: 15px;
+    }
+    .foot__info-links li{
+        margin: 10px; 
+    }
+}
+@media (max-width: 650px) {
+    .contact__title{
+        font-size: 30px;
+    }
+    .contact__form-datos{
+        font-size: 12px;
+        margin: 0 10px 20px 10px;
+    }
+    .contact__form-datos input{
+        width: 150px;
+        height: 30px;
+    }
+    textarea{
+        height: 150px;
+        font-size: 12px;
+    }
+    .contact__form-checkbox{
+        font-size: 12px;
+    }
+    .foot__info-links li{
+       font-size: 12px;
+    }
+    .foot__info{
+        padding-top: 5px;
+    }
+}
+@media (max-width: 480px) {
+    h1{
+        font-size: 30px;
+    }
+    .galery__column-item h3{
+        font-size: 1em;
+    }
+    .foot__info{
+        padding-top: 0;
+    }
+}
+@media (max-width: 400px) {
+    .contact__form{
+        width: 200px;
+    }
+    .contact__title{
+        font-size: 20px;
+    }
+    .contact__form-datos{
+        font-size: 12px;
+        margin: 0 8px 15px px;
+    }
+    .contact__form-datos input{
+        width: 150px;
+        height: 20px;
+    }
+    textarea{
+        height: 150px;
+        font-size: 12px;
+    }
+}
+@media (max-width: 370px) {
+    .grid__container-logo{
+       padding: 0 10px;
+    }
+    .grid__container-burger{
+        padding: 0 10px;
+    }
+    .galery__column-item{
+        height: 150px;
+        font-size: 12px;
+    }
+    .foot__title{
+        font-size: 10px;
+    }
+    .foot__info{
+        padding-top: 10px;
+        font-size: 10px;
+    }
+    .foot__redes img{
+        width: 20px;
+        height: 20px;
+        margin: 20px 10px;
+    }
+    .foot__derechos {
+        font-size: 10px;
+    }
+}

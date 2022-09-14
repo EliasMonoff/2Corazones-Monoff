@@ -1,0 +1,95 @@
+.contact{
+    background-color: #A9D0F5;
+    font-family: 'Mukta', sans-serif;
+    background-image: url('/asset/images/image-backgund-contacto.jfif');
+    display: grid;
+    justify-content: center;
+    grid-template-areas: 
+    "title title title"
+    "form  form  form"
+    "form  form  form"
+    "map   map   map"; 
+}
+.contact__content{
+    grid-area: form;
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+.contact__title{
+    grid-area: title;
+    font-size: 40px;
+    color: #610B21;
+    text-align: center;
+}
+.contact__form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #E0E0F8;
+    border: 2px solid #2E2E2E;
+    border-radius: 10px;
+    width: 55vw;
+    max-width: 1200px;
+    min-width: 250px;
+    padding: 40px 0;
+}
+.contact__form-datos{
+    margin: 0 20px 40px 20px;
+}
+.contact__form-datos input{
+    height: 40px;
+    width: 250px;
+    border: rgba(190, 190, 190, 0.5);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.6);
+    padding-left: 5px;
+}
+textarea{
+    width: 30vw;
+    height: 25vh;
+    min-width: 150px;
+    resize: none;
+    font-family: 'Manrope', sans-serif;
+    padding-left: 5px;
+}
+.contact__form-btn input{
+    background-color: rgba(172, 172, 172, 0.5);
+    color: rgb(71, 71, 71);
+    width: 100px;
+    height: auto;
+    padding: 10px;
+    border: none;
+    border-radius: 200px;
+    margin: 15px 50px;
+}
+.contact__form-map{
+    grid-area: map;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact__form-map iframe{
+    width: 60vw;
+    height: 30vh;
+    min-width: 250px;
+}
+.contact__form-checkbox{
+    font-size: 16px;
+}
+.contact__form-button input{
+    margin: 20px;
+    padding: 4px;
+    color: white;
+    border: 2px solid #114385;
+    background-color: rgba(10, 95, 186, 0.822);
+    border-radius:10px;
+    font-family: 'Manrope', sans-serif;
+    font-size: 15px;
+    box-shadow: 3px 3px rgba(247, 125, 10, 0.789);
+    transition: all 0.3s;
+}
+.contact__form-button input:hover{
+    background-color: rgba(0, 170, 255, 0.818);
+}
