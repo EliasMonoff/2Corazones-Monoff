@@ -131,7 +131,7 @@ h1 {
   background-image: url("/asset/images/inicio7.jpg"); }
 
 .main__ice-cream {
-  background-image: url("/elias_monoff/html/asset/images/image-background-helado.jfif");
+  background-image: url("/asset/images/image-background-helado.jfif");
   background-size: cover;
   display: flex;
   justify-content: space-around;
@@ -151,7 +151,10 @@ h1 {
   width: 150px;
   height: 30px;
   border: 1px solid #1e6329;
-  border-radius: 20px; }
+  border-radius: 20px;
+  transition: all 0.3s; }
+  .main__ice-cream button:active {
+    transform: scale(0.9); }
 
 .main__ice-cream small {
   background-color: #f4ece0dc;
@@ -165,7 +168,10 @@ h1 {
   width: 300px;
   margin-top: 10px;
   border: 5px solid black;
-  border-radius: 10px; }
+  border-radius: 10px;
+  transition: all 0.3s; }
+  .main__ice-cream img:hover {
+    transform: scale(1.1); }
 
 .prom {
   background-image: url("/elias_monoff/html/asset/images/image-background-promociones.jpg"); }

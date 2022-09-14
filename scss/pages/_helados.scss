@@ -1,5 +1,5 @@
 .main__ice-cream{
-    background-image: url('/elias_monoff/html/asset/images/image-background-helado.jfif');
+    background-image: url('/asset/images/image-background-helado.jfif');
     background-size: cover;
     display: flex;
     justify-content: space-around;
@@ -20,6 +20,11 @@
     height: 30px;
     border: 1px solid rgb(30, 99, 41);
     border-radius: 20px;
+    transition: all 0.3s;
+
+    &:active{
+        transform: scale(0.9);
+    }
 }
 .main__ice-cream small{
     background-color: #f4ece0dc;
@@ -34,4 +39,9 @@
     margin-top: 10px;
     border: 5px solid black;
     border-radius: 10px;
+    transition: all 0.3s;
+
+    &:hover{
+        transform: scale(1.1);
+    }
 }
