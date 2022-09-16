@@ -19,7 +19,7 @@
 .contact__title{
     grid-area: title;
     font-size: 40px;
-    color: #610B21;
+    color: $primary;
     text-align: center;
 }
 .contact__form{
@@ -81,14 +81,14 @@ textarea{
 .contact__form-button input{
     margin: 20px;
     padding: 4px;
-    color: white;
+    color: $secondary;
     border: 2px solid #114385;
     background-color: rgba(10, 95, 186, 0.822);
     border-radius:10px;
     font-family: 'Manrope', sans-serif;
     font-size: 15px;
     box-shadow: 3px 3px rgba(247, 125, 10, 0.789);
-    transition: all 0.3s;
+    transition: $transition;
 }
 .contact__form-button input:hover{
     background-color: rgba(0, 170, 255, 0.818);

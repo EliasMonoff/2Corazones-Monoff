@@ -14,13 +14,13 @@
 }
 .main__ice-cream button{
     background-color: rgb(72, 179, 90);
-    color: rgb(238, 228, 228);
+    color: $secondary;
     margin: 20px auto;
     width: 150px;
     height: 30px;
     border: 1px solid rgb(30, 99, 41);
     border-radius: 20px;
-    transition: all 0.3s;
+    transition: $transition;
 
     &:active{
         transform: scale(0.9);
@@ -39,7 +39,7 @@
     margin-top: 10px;
     border: 5px solid black;
     border-radius: 10px;
-    transition: all 0.3s;
+    transition: $transition;
 
     &:hover{
         transform: scale(1.1);

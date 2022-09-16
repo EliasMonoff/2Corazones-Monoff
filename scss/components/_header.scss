@@ -22,13 +22,13 @@
 .grid__container-nav ul li a{
     font-family: sans-serif;
     text-decoration: none;
-    background-color: white;
+    background-color: $secondary;
     padding: 8px;
     color: rgba(227, 15, 15, 0.945);
     border-radius: 16px;
     font-size: 24px;
     margin-left: 24px;
-    transition: all 0.3s;
+    transition: $transition;
 }
 .grid__container-nav ul li a:hover{
     background-color: #767272;

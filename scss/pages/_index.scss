@@ -4,14 +4,14 @@
 h1{
     text-align: center;
     font-size: 65px;
-    background: linear-gradient(rgba(252, 252, 252, 0.9), rgba(209, 209, 209, 0.1));
-    color: #3f041c;
+    background: linear-gradient($secondary, rgba(209, 209, 209, 0.1));
+    color: $primary;
     font-family: 'Tiro Tamil', serif;
     margin-bottom: 15px;
 }
 .grid__container{
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
     "header"
     "main"
     "slider"
@@ -23,7 +23,7 @@ h1{
     &-slider{
         grid-area: slider;
         background-color: $primary;
-        color: #fff;
+        color: $secondary;
         text-align: center;
         height: 200px;
     }
@@ -41,21 +41,21 @@ h1{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-    
+
         &-item{
             width: 45%;
             height: 25vh;
             background-size: cover;
             background-position: center;
-            color: #fff;
+            color: $secondary;
             text-shadow: 1px 1px #1C1C1C;
             margin: 5px;
             border: 1px solid rgba(63, 63, 63, 0.6);
             border-radius: 5px;
             text-align: center;
             font-family: 'Mukta', sans-serif;
-            transition: all 0.3s;
-           
+            transition: $transition;
+
             &:hover{
                 transform: scale(1.03);
             }

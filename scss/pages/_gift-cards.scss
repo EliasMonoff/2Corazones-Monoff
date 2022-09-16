@@ -8,7 +8,7 @@
     text-align: center;
     font-size: 3em;
     margin: 1rem;
-    color: #610B21;
+    color: $primary;
 }
 .card__content{
     display: flex;
@@ -37,16 +37,16 @@
 }
 .card__content-box h3{
     padding: 1em;
-    color: #3f041c;
+    color: $primary;
 }
 .card__content-box button{
     padding: 5px;
-    color: #fff;
+    color: $secondary;
     border:2px solid #114385;
     background-color: rgba(10, 95, 186, 0.822);
     border-radius:10px;
     font-size: 15px;
-    transition: all 0.3s;
+    transition: $transition;
 }
 .card__content-box button:hover{
     background-color: rgba(0, 170, 255, 0.818);

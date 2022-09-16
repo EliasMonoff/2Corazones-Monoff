@@ -1,5 +1,5 @@
 .prom{
-    background-image: url('/elias_monoff/html/asset/images/image-background-promociones.jpg');
+    background-image: url('/asset/images/image-background-promociones.jpg');
 }
 h2{
     font-size: 40px;
@@ -24,7 +24,7 @@ td{
 }
 .table__head{
     background-color: rgb(4, 66, 124);
-    color: white;
+    color: $secondary;
 }
 .table__head th{
     padding: 10px 150px 10px 150px;

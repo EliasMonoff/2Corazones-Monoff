@@ -33,7 +33,7 @@ ul {
 .grid__container-nav ul li a {
   font-family: sans-serif;
   text-decoration: none;
-  background-color: white;
+  background-color: #fff;
   padding: 8px;
   color: rgba(227, 15, 15, 0.945);
   border-radius: 16px;
@@ -63,8 +63,8 @@ ul {
 h1 {
   text-align: center;
   font-size: 65px;
-  background: linear-gradient(rgba(252, 252, 252, 0.9), rgba(209, 209, 209, 0.1));
-  color: #3f041c;
+  background: linear-gradient(#fff, rgba(209, 209, 209, 0.1));
+  color: #610B21;
   font-family: 'Tiro Tamil', serif;
   margin-bottom: 15px; }
 
@@ -146,7 +146,7 @@ h1 {
 
 .main__ice-cream button {
   background-color: #48b35a;
-  color: #eee4e4;
+  color: #fff;
   margin: 20px auto;
   width: 150px;
   height: 30px;
@@ -174,7 +174,7 @@ h1 {
     transform: scale(1.1); }
 
 .prom {
-  background-image: url("/elias_monoff/html/asset/images/image-background-promociones.jpg"); }
+  background-image: url("/asset/images/image-background-promociones.jpg"); }
 
 h2 {
   font-size: 40px;
@@ -199,7 +199,7 @@ td {
 
 .table__head {
   background-color: #04427c;
-  color: white; }
+  color: #fff; }
 
 .table__head th {
   padding: 10px 150px 10px 150px; }
@@ -249,7 +249,7 @@ td {
 
 .card__content-box h3 {
   padding: 1em;
-  color: #3f041c; }
+  color: #610B21; }
 
 .card__content-box button {
   padding: 5px;
@@ -342,7 +342,7 @@ textarea {
 .contact__form-button input {
   margin: 20px;
   padding: 4px;
-  color: white;
+  color: #fff;
   border: 2px solid #114385;
   background-color: rgba(10, 95, 186, 0.822);
   border-radius: 10px;
