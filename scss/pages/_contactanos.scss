@@ -46,7 +46,6 @@
                 padding-left: 5px;
             }
         }
-        
         &-btn input{
             background-color: rgba(172, 172, 172, 0.5);
             color: rgb(71, 71, 71);
@@ -54,7 +53,7 @@
             height: auto;
             padding: 10px;
             border: none;
-            border-radius: 200px;
+            @include radius(200px);
             margin: 15px 50px;
         }
         &-map{
@@ -74,24 +73,13 @@
             font-size: 16px;
         }
         &-button input{
-            margin: 20px;
-            padding: 4px;
-            color: $secondary;
-            border: 2px solid #114385;
-            background-color: rgba(10, 95, 186, 0.822);
-            border-radius:10px;
-            font-family: 'Manrope', sans-serif;
-            font-size: 15px;
-            box-shadow: 3px 3px rgba(247, 125, 10, 0.789);
-            transition: $transition;
+            @extend .botones;
 
             &:hover{
                 background-color: rgba(0, 170, 255, 0.818);
             }
         }
     }
-
-        
 }
 textarea{
     width: 30vw;

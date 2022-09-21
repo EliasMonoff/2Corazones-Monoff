@@ -25,7 +25,7 @@
     background-color: $secondary;
     padding: 8px;
     color: rgba(227, 15, 15, 0.945);
-    border-radius: 16px;
+    @include radius(15px);
     font-size: 24px;
     margin-left: 24px;
     transition: $transition;

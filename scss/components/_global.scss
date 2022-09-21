@@ -9,3 +9,22 @@ body{
 ul{
     list-style-type: none;
 }
+.botones{
+    margin: 20px;
+    padding: 4px;
+    color: $secondary;
+    border: 2px solid #114385;
+    background-color: rgba(10, 95, 186, 0.822);
+    border-radius:10px;
+    font-family: 'Manrope', sans-serif;
+    font-size: 15px;
+    box-shadow: 3px 3px rgba(247, 125, 10, 0.789);
+    transition: $transition;
+}
+@mixin templateGrid($columns) {
+    display: grid;
+    grid-template-columns: repeat($columns, 1fr);
+}
+@mixin radius($radius) {
+    border-radius: $radius;
+}

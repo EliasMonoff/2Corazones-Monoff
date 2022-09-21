@@ -3,9 +3,7 @@ footer{
     font-family: 'Manrope', sans-serif;
 }
 .foot{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    @include templateGrid(2);
 }
 .foot__title{
     color: #fff;
@@ -13,6 +11,7 @@ footer{
 }
 .foot__redes{
     display: flex;
+    justify-content: center;
     padding-bottom: 30px;
 }
 .foot__redes img{

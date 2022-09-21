@@ -1,5 +1,5 @@
 .card{
-    background-image: url('/elias_monoff/html/asset/images/image-background-promociones.jfif');
+    background-image: url('/asset/images/image-background-promociones.jfif');
     background-size: cover;
     background-position: center;
     font-family: sans-serif;
@@ -40,13 +40,7 @@
     color: $primary;
 }
 .card__content-box button{
-    padding: 5px;
-    color: $secondary;
-    border:2px solid #114385;
-    background-color: rgba(10, 95, 186, 0.822);
-    border-radius:10px;
-    font-size: 15px;
-    transition: $transition;
+    @extend .botones;
 }
 .card__content-box button:hover{
     background-color: rgba(0, 170, 255, 0.818);

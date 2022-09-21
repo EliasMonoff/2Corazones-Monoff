@@ -9,6 +9,18 @@ body {
 ul {
   list-style-type: none; }
 
+.botones, .card__content-box button, .contact__form-button input {
+  margin: 20px;
+  padding: 4px;
+  color: #fff;
+  border: 2px solid #114385;
+  background-color: rgba(10, 95, 186, 0.822);
+  border-radius: 10px;
+  font-family: 'Manrope', sans-serif;
+  font-size: 15px;
+  box-shadow: 3px 3px rgba(247, 125, 10, 0.789);
+  transition: all 0.3s; }
+
 .grid__container-header {
   grid-area: header;
   background-color: #114385;
@@ -36,7 +48,7 @@ ul {
   background-color: #fff;
   padding: 8px;
   color: rgba(227, 15, 15, 0.945);
-  border-radius: 16px;
+  border-radius: 15px;
   font-size: 24px;
   margin-left: 24px;
   transition: all 0.3s; }
@@ -211,7 +223,7 @@ td {
   background-color: grey; }
 
 .card {
-  background-image: url("/elias_monoff/html/asset/images/image-background-promociones.jfif");
+  background-image: url("/asset/images/image-background-promociones.jfif");
   background-size: cover;
   background-position: center;
   font-family: sans-serif; }
@@ -250,15 +262,6 @@ td {
 .card__content-box h3 {
   padding: 1em;
   color: #610B21; }
-
-.card__content-box button {
-  padding: 5px;
-  color: #fff;
-  border: 2px solid #114385;
-  background-color: rgba(10, 95, 186, 0.822);
-  border-radius: 10px;
-  font-size: 15px;
-  transition: all 0.3s; }
 
 .card__content-box button:hover {
   background-color: rgba(0, 170, 255, 0.818); }
@@ -321,19 +324,8 @@ td {
         min-width: 250px; }
     .contact__form-checkbox {
       font-size: 16px; }
-    .contact__form-button input {
-      margin: 20px;
-      padding: 4px;
-      color: #fff;
-      border: 2px solid #114385;
-      background-color: rgba(10, 95, 186, 0.822);
-      border-radius: 10px;
-      font-family: 'Manrope', sans-serif;
-      font-size: 15px;
-      box-shadow: 3px 3px rgba(247, 125, 10, 0.789);
-      transition: all 0.3s; }
-      .contact__form-button input:hover {
-        background-color: rgba(0, 170, 255, 0.818); }
+    .contact__form-button input:hover {
+      background-color: rgba(0, 170, 255, 0.818); }
 
 textarea {
   width: 30vw;
@@ -348,9 +340,8 @@ footer {
   font-family: 'Manrope', sans-serif; }
 
 .foot {
-  display: flex;
-  justify-content: space-around;
-  align-items: center; }
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); }
 
 .foot__title {
   color: #fff;
@@ -358,6 +349,7 @@ footer {
 
 .foot__redes {
   display: flex;
+  justify-content: center;
   padding-bottom: 30px; }
 
 .foot__redes img {
