@@ -6,19 +6,21 @@ h1{
     font-size: 65px;
     background: linear-gradient($secondary, rgba(209, 209, 209, 0.1));
     color: $primary;
-    font-family: 'Tiro Tamil', serif;
     margin-bottom: 15px;
 }
 .grid__container{
     display: grid;
     grid-template-areas:
     "header"
-    "main"
-    "slider"
+    "galery"
+    "article"
     "footer";
 
-    &-main{
-        grid-area: main;
+    &-galery{
+        grid-area: galery;
+    }
+    &-article{
+        grid-area: article;
     }
     &-slider{
         grid-area: slider;
@@ -63,6 +65,32 @@ h1{
                 background: linear-gradient(#000, rgba(0, 0, 0, 0) 25px);
             }
         }
+    }
+}
+.article{
+    @include templateGrid(2);
+    margin: 100px auto;
+    background-color: rgba(250, 235, 215, 0.226);
+
+    &__item{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+        text-align: center;
+    }
+    &__item-2 img{
+        width: 40vw;
+        min-width: 600px;
+        @include radius(10px)
+    }
+    &__title{
+        font-size: 2em;
+        margin-bottom: 1.2em;
+    }
+    &__content{
+        font-size: 1.5em;
     }
 }
 

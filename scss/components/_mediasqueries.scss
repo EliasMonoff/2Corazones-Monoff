@@ -1,3 +1,16 @@
+@media (max-width: 1550px){
+    .article{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 50px auto;
+
+        &__item-2 img{
+            margin-top: 20px;
+            min-width: 320px;
+        }
+    }
+}
 @media (max-width: 1124px){
     .grid__container-header{
         height: 60px;
@@ -26,6 +39,13 @@
     .galery__column-item{
         width: 90%;
     }
+    .article__title{
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+    .article__content{
+        font-size: 18px;
+    }
 }
 @media (max-width: 768px) {
     .grid__container-header{
@@ -50,6 +70,12 @@
     }
     .foot__info-links li{
         margin: 10px; 
+    }
+    .article__title{
+        font-size: 18px;
+    }
+    .article__content{
+        font-size: 14px;
     }
 }
 @media (max-width: 650px) {
@@ -106,6 +132,12 @@
     }
     textarea{
         height: 150px;
+        font-size: 12px;
+    }
+    .article__title{
+        font-size: 14px;
+    }
+    .article__content{
         font-size: 12px;
     }
 }
