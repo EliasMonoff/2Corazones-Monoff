@@ -14,6 +14,7 @@ h1{
     "header"
     "galery"
     "article"
+    "order"
     "footer";
 
     &-galery{
@@ -22,11 +23,8 @@ h1{
     &-article{
         grid-area: article;
     }
-    &-slider{
-        grid-area: slider;
-        background-color: $primary;
-        color: $secondary;
-        text-align: center;
+    &-order{
+        grid-area: order;
         height: 200px;
     }
     &-footer{
@@ -93,7 +91,29 @@ h1{
         font-size: 1.5em;
     }
 }
+.order{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
+    &__title{
+        color: $primary;
+        text-align: center;
+        font-size: 1.5em;
+        margin-bottom: 15px;
+    }
+    &__btn{
+        @extend .botones;
+
+        a{
+            color: $secondary;
+        }
+        &:hover{
+            background-color: rgba(0, 170, 255, 0.818);
+        }
+    }
+}
 .item-1{
     background-image: url('/asset/images/inicio1.jfif');
 }

@@ -11,7 +11,10 @@ body {
 ul {
   list-style-type: none; }
 
-.botones, .card__content-box button, .contact__form-button input {
+a {
+  text-decoration: none; }
+
+.botones, .order__btn, .card__content-box button, .contact__form-button input {
   margin: 20px;
   padding: 4px;
   color: #fff;
@@ -83,16 +86,13 @@ h1 {
 
 .grid__container {
   display: grid;
-  grid-template-areas: "header" "galery" "article" "footer"; }
+  grid-template-areas: "header" "galery" "article" "order" "footer"; }
   .grid__container-galery {
     grid-area: galery; }
   .grid__container-article {
     grid-area: article; }
-  .grid__container-slider {
-    grid-area: slider;
-    background-color: #610B21;
-    color: #fff;
-    text-align: center;
+  .grid__container-order {
+    grid-area: order;
     height: 200px; }
   .grid__container-footer {
     grid-area: footer; }
@@ -145,6 +145,21 @@ h1 {
     margin-bottom: 1.2em; }
   .article__content {
     font-size: 1.5em; }
+
+.order {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .order__title {
+    color: #610B21;
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 15px; }
+  .order__btn a {
+    color: #fff; }
+  .order__btn:hover {
+    background-color: rgba(0, 170, 255, 0.818); }
 
 .item-1 {
   background-image: url("/asset/images/inicio1.jfif"); }
@@ -484,6 +499,8 @@ footer {
   h1 {
     font-size: 30px; }
   .galery__column-item h3 {
+    font-size: 1em; }
+  .order__title {
     font-size: 1em; }
   .foot__info {
     padding-top: 0; } }
