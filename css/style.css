@@ -75,7 +75,7 @@ a {
   display: none; }
 
 .body__index {
-  background-image: url("asset/images/image-background-index.jpg"); }
+  background-image: url(../../asset/images/image-background-index.jpg); }
 
 h1 {
   text-align: center;
@@ -165,7 +165,7 @@ h1 {
   background-image: url("../../asset/images/inicio1.jfif"); }
 
 .item-2 {
-  background-image: url("/asset/images/inicio2.jfif"); }
+  background-image: url("asset/images/inicio2.jfif"); }
 
 .item-3 {
   background-image: url("./asset/images/inicio3.jfif"); }
