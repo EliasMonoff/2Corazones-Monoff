@@ -1,0 +1,4 @@
+User-agent: *
+Allow: / 
+
+Sistemap: https://eliasmonoff.github.io/2Corazones-Monoff/sitemap.xml
