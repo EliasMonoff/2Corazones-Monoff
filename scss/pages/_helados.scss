@@ -1,16 +1,26 @@
-.main__ice-cream{
+.body__helados{
     background-image: url('/asset/images/image-background-helado.jfif');
     background-size: cover;
+    background-position: center;
+}
+.main__ice-cream{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    padding: 100px;
+    padding: 50px 100px;
     text-align: center;
+}
+.main__ice-cream-title{
+    margin: 20px 0;
+    background-color: #f4ece046;
+    text-align: center;
+    font-size: 2.5em;
 }
 .main__ice-cream-box{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 20px;
 }
 .main__ice-cream button{
     background-color: rgb(72, 179, 90);

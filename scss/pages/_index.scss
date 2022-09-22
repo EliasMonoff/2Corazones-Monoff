@@ -68,7 +68,7 @@ h1{
 .article{
     @include templateGrid(2);
     margin: 100px auto;
-    background-color: rgba(250, 235, 215, 0.226);
+    background-color: #f4ece046;
 
     &__item{
         width: 50%;
