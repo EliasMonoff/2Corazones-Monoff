@@ -26,21 +26,21 @@ a {
   box-shadow: 3px 3px rgba(247, 125, 10, 0.789);
   transition: all 0.3s; }
 
-.grid__container-header {
+.navbar {
+  background-color: #114385; }
+
+header {
   grid-area: header;
   background-color: #114385;
   position: sticky;
   top: 0;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
   z-index: 1;
   height: auto;
   min-height: 7vh;
   min-width: 320px; }
 
-.grid__container-logo {
-  height: 80px; }
+.grid__container-logo, .navbar-brand img {
+  height: 60px; }
 
 .grid__container-nav ul {
   display: flex;
@@ -80,9 +80,9 @@ a {
 h1 {
   text-align: center;
   font-size: 65px;
-  background: linear-gradient(#fff, rgba(209, 209, 209, 0.1));
+  background-color: #f4ece046;
   color: #610B21;
-  margin-bottom: 15px; }
+  margin: 15px 0; }
 
 .grid__container {
   display: grid;
@@ -392,40 +392,32 @@ footer {
 .foot {
   display: grid;
   grid-template-columns: repeat(2, 1fr); }
-
-.foot__title {
-  color: #fff;
-  text-align: center; }
-
-.foot__redes {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 30px; }
-
-.foot__redes img {
-  width: 40px;
-  height: 40px;
-  margin: 30px; }
-
-.foot__info {
-  color: #fff;
-  text-align: center;
-  padding-top: 15px; }
-
-.foot__info-links {
-  padding-bottom: 30px; }
-
-.foot__info-links li {
-  margin: 15px; }
-
-.foot__info-links a {
-  text-decoration: none;
-  color: #fff; }
-
-.foot__derechos {
-  background-color: #1C1C1C;
-  text-align: center;
-  color: #fff; }
+  .foot__title {
+    color: #fff;
+    text-align: center; }
+  .foot__redes {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px; }
+    .foot__redes img {
+      width: 40px;
+      height: 40px;
+      margin: 30px; }
+  .foot__info {
+    color: #fff;
+    text-align: center;
+    padding-top: 15px; }
+    .foot__info-links {
+      padding-bottom: 30px; }
+      .foot__info-links li {
+        margin: 15px; }
+      .foot__info-links a {
+        text-decoration: none;
+        color: #fff; }
+  .foot__derechos {
+    background-color: #1C1C1C;
+    text-align: center;
+    color: #fff; }
 
 @media (max-width: 1550px) {
   .article {

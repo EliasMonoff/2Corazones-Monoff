@@ -4,9 +4,9 @@
 h1{
     text-align: center;
     font-size: 65px;
-    background: linear-gradient($secondary, rgba(209, 209, 209, 0.1));
+    background-color: #f4ece046;
     color: $primary;
-    margin-bottom: 15px;
+    margin: 15px 0;
 }
 .grid__container{
     display: grid;
