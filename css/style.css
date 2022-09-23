@@ -27,7 +27,9 @@ a {
   transition: all 0.3s; }
 
 .navbar {
-  background-color: #114385; }
+  background-color: #114385;
+  display: flex;
+  justify-content: space-around; }
 
 header {
   grid-area: header;
@@ -44,6 +46,7 @@ header {
 
 .grid__container-nav ul {
   display: flex;
+  justify-content: center;
   align-items: center;
   text-decoration: none; }
 
@@ -121,7 +124,7 @@ h1 {
       transition: all 0.3s; }
       .galery__column-item:hover {
         transform: scale(1.03); }
-      .galery__column-item h3 {
+      .galery__column-item h2 {
         background: linear-gradient(#000, rgba(0, 0, 0, 0) 25px); }
 
 .article {
