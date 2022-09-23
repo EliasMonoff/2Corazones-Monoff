@@ -232,14 +232,15 @@ h1 {
   border-radius: 20px;
   font-family: 'Tiro Tamil', serif; }
 
-.main__ice-cream img {
+.main__ice-cream-box img {
   height: 220px;
   width: 300px;
+  min-width: 70px;
   margin-top: 10px;
   border: 5px solid black;
   border-radius: 10px;
   transition: all 0.3s; }
-  .main__ice-cream img:hover {
+  .main__ice-cream-box img:hover {
     transform: scale(1.1); }
 
 .prom {
@@ -486,6 +487,8 @@ footer {
     font-size: 14px; } }
 
 @media (max-width: 650px) {
+  .main__ice-cream {
+    padding: 50px 0; }
   .contact__title {
     font-size: 30px; }
   .contact__form-datos {
@@ -515,6 +518,8 @@ footer {
     padding-top: 0; } }
 
 @media (max-width: 400px) {
+  .main__ice-cream {
+    padding: 20px 0; }
   .contact__form {
     width: 200px; }
   .contact__title {
