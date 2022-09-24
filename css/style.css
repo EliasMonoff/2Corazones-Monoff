@@ -337,7 +337,7 @@ td {
 .contact {
   background-color: #A9D0F5;
   font-family: 'Mukta', sans-serif;
-  background-image: url("/asset/images/image-backgund-contacto.jfif");
+  background-image: url("../asset/images/image-backgund-contacto.jfif");
   display: grid;
   justify-content: center;
   grid-template-areas: "title title title" "form  form  form" "form  form  form" "map   map   map"; }
@@ -348,9 +348,13 @@ td {
     margin: 30px; }
   .contact__title {
     grid-area: title;
-    font-size: 40px;
-    color: #610B21;
     text-align: center; }
+    .contact__title h1 {
+      font-size: 2em;
+      color: #610B21; }
+    .contact__title p {
+      font-size: 1.2em;
+      background-color: #f4ece046; }
   .contact__form {
     display: flex;
     flex-direction: column;
@@ -504,8 +508,6 @@ footer {
     padding: 50px 0; }
   .card__title {
     font-size: 2em; }
-  .contact__title {
-    font-size: 30px; }
   .contact__form-datos {
     font-size: 12px;
     margin: 0 10px 20px 10px; }
@@ -537,8 +539,10 @@ footer {
     padding: 20px 0; }
   .contact__form {
     width: 200px; }
-  .contact__title {
-    font-size: 20px; }
+  .contact__title h1 {
+    font-size: 1.5em; }
+  .contact__title p {
+    font-size: 1em; }
   .contact__form-datos {
     font-size: 12px;
     margin: 0 8px 15px px; }

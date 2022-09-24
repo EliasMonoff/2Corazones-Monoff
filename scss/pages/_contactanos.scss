@@ -1,7 +1,7 @@
 .contact{
     background-color: #A9D0F5;
     font-family: 'Mukta', sans-serif;
-    background-image: url('/asset/images/image-backgund-contacto.jfif');
+    background-image: url('../asset/images/image-backgund-contacto.jfif');
     display: grid;
     justify-content: center;
     grid-template-areas: 
@@ -18,9 +18,16 @@
     }
     &__title{
         grid-area: title;
-        font-size: 40px;
-        color: $primary;
         text-align: center;
+
+        h1{
+            font-size: 2em;
+            color: $primary;
+        }
+        p{
+            font-size: 1.2em;
+            background-color: $light;
+        }
     }
     &__form{
         display: flex;
