@@ -128,7 +128,7 @@ h1 {
       transition: all 0.3s; }
       .galery__column-item:hover {
         transform: scale(1.03); }
-      .galery__column-item h3 {
+      .galery__column-item h2 {
         background: linear-gradient(#000, rgba(0, 0, 0, 0) 25px); }
 
 .article {
@@ -157,12 +157,14 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  background-color: #f4ece046;
+  margin-bottom: 50px; }
   .order__title {
     color: #610B21;
     text-align: center;
     font-size: 1.5em;
-    margin-bottom: 15px; }
+    margin-bottom: 2em; }
   .order__btn a {
     color: #fff; }
   .order__btn:hover {
@@ -190,7 +192,7 @@ h1 {
   background-image: url("../asset/images/inicio7.jpg"); }
 
 .body__helados {
-  background-image: url("/asset/images/image-background-helado.jfif");
+  background-image: url("../asset/images/image-background-helado.jfif");
   background-size: cover;
   background-position: center; }
 
@@ -281,7 +283,7 @@ td {
   background-color: grey; }
 
 .card {
-  background-image: url("/asset/images/image-background-promociones.jfif");
+  background-image: url("../asset/images/image-background-promociones.jfif");
   background-size: cover;
   background-position: center;
   font-family: sans-serif; }
@@ -289,8 +291,9 @@ td {
 .card__title {
   text-align: center;
   font-size: 3em;
-  margin: 1rem;
-  color: #610B21; }
+  margin: 1rem 0;
+  color: #610B21;
+  background-color: #f4ece046; }
 
 .card__content {
   display: flex;
@@ -298,9 +301,9 @@ td {
   flex-wrap: wrap;
   min-width: 300px; }
 
-.card__content img {
+.card__content-box img {
   width: 100%;
-  height: 70%;
+  height: 221px;
   border-top-left-radius: 10%;
   border-top-right-radius: 10%; }
 
@@ -309,17 +312,24 @@ td {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   width: 30%;
-  min-width: 400px;
+  min-width: 300px;
+  max-width: 550px;
   height: 50vh;
-  min-height: 400px;
+  min-height: 350px;
+  max-height: 350px;
   margin: 20px;
   border-radius: 10%;
   box-shadow: 2px 2px #2E2E2E; }
 
-.card__content-box h3 {
-  padding: 1em;
+.card__content-box h2 {
+  font-size: 1.5em;
+  padding: 0.5em;
   color: #610B21; }
+
+.card__content-box button {
+  margin: 0; }
 
 .card__content-box button:hover {
   background-color: rgba(0, 170, 255, 0.818); }
@@ -443,7 +453,7 @@ footer {
     justify-content: space-between; }
   .grid__container-logo {
     height: 60px;
-    padding: 0 40px; }
+    padding: 0; }
   .grid__container-nav, .grid__container-finish {
     display: none; }
   .grid__container-burger {
@@ -467,10 +477,13 @@ footer {
 @media (max-width: 768px) {
   .grid__container-header {
     height: 40px; }
-  .grid__container-logo {
+  .navbar-brand img {
     height: 40px; }
   h1 {
     font-size: 40px; }
+  .body__helados {
+    background-size: auto;
+    background-position: top; }
   .foot__title {
     padding-top: 0px; }
   .foot__redes img {
@@ -489,6 +502,8 @@ footer {
 @media (max-width: 650px) {
   .main__ice-cream {
     padding: 50px 0; }
+  .card__title {
+    font-size: 2em; }
   .contact__title {
     font-size: 30px; }
   .contact__form-datos {
@@ -539,8 +554,6 @@ footer {
     font-size: 12px; } }
 
 @media (max-width: 370px) {
-  .grid__container-logo {
-    padding: 0 10px; }
   .grid__container-burger {
     padding: 0 10px; }
   .galery__column-item {

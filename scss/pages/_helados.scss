@@ -1,5 +1,5 @@
 .body__helados{
-    background-image: url('/asset/images/image-background-helado.jfif');
+    background-image: url('../asset/images/image-background-helado.jfif');
     background-size: cover;
     background-position: center;
 }
@@ -12,7 +12,7 @@
 }
 .main__ice-cream-title{
     margin: 20px 0;
-    background-color: #f4ece046;
+    background-color: $light;
     text-align: center;
     font-size: 2.5em;
 }

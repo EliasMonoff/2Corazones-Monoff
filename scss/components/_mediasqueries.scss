@@ -18,7 +18,7 @@
     }
     .grid__container-logo{
         height: 60px;
-        padding: 0 40px;
+        padding: 0;
     }
     .grid__container-nav, .grid__container-finish{
         display: none;
@@ -51,11 +51,15 @@
     .grid__container-header{
         height: 40px;
     }
-    .grid__container-logo{
+    .navbar-brand img{
         height: 40px;
     }
     h1{
         font-size: 40px;
+    }
+    .body__helados{
+        background-size: auto;
+        background-position: top;
     }
     .foot__title{
         padding-top: 0px;
@@ -81,6 +85,9 @@
 @media (max-width: 650px) {
     .main__ice-cream{
         padding: 50px 0;
+    }
+    .card__title{
+        font-size: 2em;
     }
     .contact__title{
         font-size: 30px;
@@ -151,9 +158,6 @@
     }
 }
 @media (max-width: 370px) {
-    .grid__container-logo{
-       padding: 0 10px;
-    }
     .grid__container-burger{
         padding: 0 10px;
     }
