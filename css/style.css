@@ -453,8 +453,6 @@ footer {
   .grid__container-logo {
     height: 60px;
     padding: 0; }
-  .grid__container-nav, .grid__container-finish {
-    display: none; }
   .grid__container-burger {
     background: none;
     border: none;
