@@ -95,7 +95,7 @@ h1 {
 
 .grid__container {
   display: grid;
-  grid-template-areas: "header" "galery" "article" "order" "footer"; }
+  grid-template-areas: "header" "galery" "article" "order" "footer"; }
   .grid__container-galery {
     grid-area: galery; }
   .grid__container-article {
@@ -193,7 +193,7 @@ h1 {
 .item-7 {
   background-image: url("../asset/images/inicio7.jpg"); }
 
-.body__helados {
+.main__helados {
   background-image: url("../asset/images/image-background-helado.jfif");
   background-size: cover;
   background-position: center; }
@@ -335,7 +335,7 @@ td {
   background-image: url("../asset/images/image-backgund-contacto.jfif");
   display: grid;
   justify-content: center;
-  grid-template-areas: "title title title" "form  form  form" "form  form  form" "map   map   map"; }
+  grid-template-areas: "title title title" "form  form  form" "form  form  form" "map   map   map"; }
   .contact__content {
     grid-area: form;
     display: flex;
