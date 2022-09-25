@@ -4,38 +4,42 @@ footer{
 }
 .foot{
     @include templateGrid(2);
-}
-.foot__title{
-    color: #fff;
-    text-align: center;
-}
-.foot__redes{
-    display: flex;
-    justify-content: center;
-    padding-bottom: 30px;
-}
-.foot__redes img{
-    width: 40px;
-    height: 40px;
-    margin: 30px;
-}
-.foot__info{
-    color: #fff;
-    text-align: center;
-    padding-top: 15px;
-}
-.foot__info-links{
-    padding-bottom: 30px;
-}
-.foot__info-links li{
-    margin: 15px;
-}
-.foot__info-links a{
-    text-decoration: none;
-    color: #fff;
-}
-.foot__derechos{
-    background-color: #1C1C1C;
-    text-align: center;
-    color: #fff;
+
+    &__title{
+        color: #fff;
+        text-align: center;
+    }
+    &__redes{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 30px;
+
+        img{
+            width: 40px;
+            height: 40px;
+            margin: 30px;
+        }
+    }
+    &__info{
+        color: #fff;
+        text-align: center;
+        padding-top: 15px;
+
+        &-links{
+            padding-bottom: 30px;
+
+            li{
+                margin: 15px;
+            }
+            a{
+                text-decoration: none;
+                color: #fff;
+            }
+        }
+    }
+    &__derechos{
+        background-color: #1C1C1C;
+        text-align: center;
+        color: #fff;
+    }
 }

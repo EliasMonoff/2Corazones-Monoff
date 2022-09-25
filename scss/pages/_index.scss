@@ -1,12 +1,5 @@
 .body__index{
-    background-image: url('/asset/images/image-background-index.jpg');
-}
-h1{
-    text-align: center;
-    font-size: 65px;
-    background: linear-gradient($secondary, rgba(209, 209, 209, 0.1));
-    color: $primary;
-    margin-bottom: 15px;
+    background-image: url('../asset/images/image-background-index.jpg');
 }
 .grid__container{
     display: grid;
@@ -17,6 +10,13 @@ h1{
     "order"
     "footer";
 
+    &-title{
+        text-align: center;
+        font-size: 3.5em;
+        background-color: $light;
+        color: $primary;
+        margin: 15px 0;
+    }
     &-galery{
         grid-area: galery;
     }
@@ -59,7 +59,7 @@ h1{
             &:hover{
                 transform: scale(1.03);
             }
-            h3{
+            h2{
                 background: linear-gradient(#000, rgba(0, 0, 0, 0) 25px);
             }
         }
@@ -96,42 +96,42 @@ h1{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: $light;
+    margin-bottom: 50px;
 
     &__title{
         color: $primary;
         text-align: center;
-        font-size: 1.5em;
-        margin-bottom: 15px;
+        font-size: 2em;
+        margin-bottom: 1em;
     }
     &__btn{
+        margin-top: 0; 
         @extend .botones;
-
+        font-size: 1.2em;
         a{
             color: $secondary;
-        }
-        &:hover{
-            background-color: rgba(0, 170, 255, 0.818);
         }
     }
 }
 .item-1{
-    background-image: url('/asset/images/inicio1.jfif');
+    background-image: url('../asset/images/inicio1.jfif');
 }
 .item-2{
-    background-image: url('/asset/images/inicio2.jfif');
+    background-image: url('../asset/images/inicio2.jfif');
 }
 .item-3{
-    background-image: url('/asset/images/inicio3.jfif');
+    background-image: url('../asset/images/inicio3.jfif');
 }
 .item-4{
-    background-image: url('/asset/images/inicio4.jpg');
+    background-image: url('../asset/images/inicio4.jpg');
 }
 .item-5{
-    background-image: url('/asset/images/inicio5.jpg');
+    background-image: url('../asset/images/inicio5.jpg');
 }
 .item-6{
-    background-image: url('/asset/images/inicio6.jpg');
+    background-image: url('../asset/images/inicio6.jpg');
 }
 .item-7{
-    background-image: url('/asset/images/inicio7.jpg');
+    background-image: url('../asset/images/inicio7.jpg');
 }

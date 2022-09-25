@@ -18,20 +18,7 @@
     }
     .grid__container-logo{
         height: 60px;
-        padding: 0 40px;
-    }
-    .grid__container-nav, .grid__container-finish{
-        display: none;
-    }
-    .grid__container-burger{
-        background: none;
-        border: none;
-        padding: 0 40px;
-    }
-    .grid__container-burger img{
-        height: 20px;
-        width: 20px;
-        display: block;
+        padding: 0;
     }
     h1{
         font-size: 50px;
@@ -51,11 +38,15 @@
     .grid__container-header{
         height: 40px;
     }
-    .grid__container-logo{
+    .navbar-brand img{
         height: 40px;
     }
     h1{
         font-size: 40px;
+    }
+    .body__helados{
+        background-size: auto;
+        background-position: top;
     }
     .foot__title{
         padding-top: 0px;
@@ -79,8 +70,11 @@
     }
 }
 @media (max-width: 650px) {
-    .contact__title{
-        font-size: 30px;
+    .main__ice-cream{
+        padding: 50px 0;
+    }
+    .card__title{
+        font-size: 2em;
     }
     .contact__form-datos{
         font-size: 12px;
@@ -119,11 +113,19 @@
     }
 }
 @media (max-width: 400px) {
+    .main__ice-cream{
+        padding: 20px 0;
+    }
     .contact__form{
         width: 200px;
     }
     .contact__title{
-        font-size: 20px;
+        h1{
+        font-size: 1.5em;
+        }
+        p{
+            font-size: 1em;
+        }
     }
     .contact__form-datos{
         font-size: 12px;
@@ -145,9 +147,6 @@
     }
 }
 @media (max-width: 370px) {
-    .grid__container-logo{
-       padding: 0 10px;
-    }
     .grid__container-burger{
         padding: 0 10px;
     }

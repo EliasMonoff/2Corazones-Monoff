@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Probá los helados más ricos de todo Gran Buenos Aires. Acercate a nuestras heladerías y conocé la variedad de sabores que hay para vos.">
         <title>Helados 2 Corazones</title>
         <link rel="shortcut icon" href="./asset/images/favico.ico" type="image/x-icon">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -10,61 +11,67 @@
         <link href="https://fonts.googleapis.com/css2?family=Tiro+Tamil&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300&family=Poppins:wght@300&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="/css/style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600&family=Poppins:wght@600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/style.css">
     </head>
     <body class="grid__container body__index">
-        <header class="grid__container-header">
-            <div>
-                <a href="index.html">
-                    <img class="grid__container-logo" src="./asset/images/dos_corazones_con_redondel.png" alt="logo 2 corazones" title="Ir al inico">
-                </a>
-            </div>
-            <nav class="grid__container-nav">
-                 <ul>
-                    <li><a href="index.html">Incio</a></li>
-                    <li><a href="./pages/helados.html">Helados</a></li>
-                    <li><a href="./pages/promociones.html">Promociones</a></li>
-                    <li><a href="./pages/gift-cards.html">Gift Cards</a></li>
-                    <li><a href="./pages/contactanos.html">Contáctanos</a></li>
-                </ul>
-            </nav>
-            <div class="grid__container-finish">
-                <a href="./pages/login.html">
-                    <img src="./asset/images/Inicio-de-sesion.jpg" alt="login" title="Iniciar sesión">
-                </a>
-                <a href="#">
-                    <img src="./asset/images/carrito.png" alt="carrito de compras" title="Ir al carrito">
-                </a> 
-            </div>
-            <button class="grid__container-burger">
-                <a href="#"><img src="./asset/images/menu-hamburguesa.png" alt="Icono menu menu-hamburguesa"></a>
-            </button>
+        <header>
+            <nav class="container navbar navbar-expand-lg navbar-dark grid__container-nav">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="./index.html" title="Ir a inicio">
+                    <img class="grid__container-logo" src="./asset/images/dos_corazones_con_redondel.png" alt="2corazones - logo">
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./pages/helados.html">Helados</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./pages/sucursales.html">Sucursales</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./pages/gift-cards.html">Gift-Cards</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./pages/contactanos.html">Contacto</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
         </header>
         <main class="grid__container-main">
             <section>
-                <h1>Helados 2 Corazones</h1>
+                <h1 class="grid__container-title">Helados 2 Corazones</h1>
             </section>
             <section class="grid__container-galery">
                     <div class="galery">
                         <div class="galery__column">
                             <div class="galery__column-item item-1">
-                                <h3>Los mejores frutos rojos en un solo sabor</h3>
+                                <h2>Los mejores frutos rojos en un solo sabor</h2>
                             </div>
                             <div class="galery__column-item item-2">
-                                <h3>Gran variedad de sabores</h3>
+                                <h2>Gran variedad de sabores</h2>
                             </div>
                             <div class="galery__column-item item-3">
-                                <h3>Ganadores del premio al helado de chocolate más rico de Buenos Aires</h3>
+                                <h2>Ganadores del premio al helado de chocolate más rico de Buenos Aires</h2>
                             </div> 
                             <div class="galery__column-item item-4">
-                                <h3>¡Combiná los sabores y salsas como más te guste!</h3>  
+                                <h2>¡Combiná los sabores y salsas como más te guste!</h2>  
                             </div>
                             <div class="galery__column-item item-5">
-                                <h3>Variedad en helados sin lactosa</h3>
+                                <h2>Variedad en helados sin lactosa</h2>
                             </div>
                             <div class="galery__column-item item-6">
-                                <h3>Probá nuestros sabores light</h3>
+                                <h2>Probá nuestros sabores light</h2>
                             </div>
                         </div>
                     </div>
@@ -72,7 +79,7 @@
             <section class="grid__container-article">
                 <article class="article">
                     <div class="article__item">
-                        <h2 class="article__title">Helados que curan el alma</h2>
+                        <h3 class="article__title">Helados que curan el alma</h3>
                         <p class="article__content">
                             Según un estudio reciente del Centro Médico de la Universidad de Maryland, los helados contienen triptófano, un aminoácido que nos calma y nos ayuda a reducir la agresividad, aumentando la producción de serotonina (la hormona del bienestar). Eso ayuda a combatir el estrés, a relajarnos y a dormir mejor.
                         </p>
@@ -83,7 +90,7 @@
                 </article>
             </section>
             <section class="grid__container-order order">
-                <h3 class="order__title">¡Hacenos tu pedido ya mismo en tu heladería mas cercana!</h3>
+                <h4 class="order__title">¡Hacenos tu pedido ya mismo en nuestra heladería mas cercana!</h4>
                 <button class="order__btn">
                     <a href="./pages/helados.html">Realizar pedido</a>
                 </button>
@@ -93,7 +100,7 @@
             <div class="foot">
               <div class="foot__info">
                   <h5 class="foot__title">Seguinos en nuestras redes</h5>
-                  <ul class="foot__redes">
+                  <ul class="foot__redes list-unstyled">
                     <li>
                         <a href="fb">
                             <img src="./asset/images/instagram_logo.png" alt="Logo Instagram" title="Instagram">
@@ -110,18 +117,24 @@
                         </a>
                     </li>
                   </ul>
-              </div>
-              <div class="foot__info">
-                  <h5 class="foot__title">Más información</h5>
-                  <ul class="foot__info-links">
-                      <li><a href="#">Términos y condiciones</a></li>
-                      <li><a href="#">Preguntas Frecuentes</a></li>
-                      <li><a href="#">RRHH</a></li>
+                </div>
+                <div class="foot__info">
+                  <h5 class="foot__title text-center">Más información</h5>
+                  <ul class="foot__info-links list-unstyled">
+                    <li>
+                        <a href="#">Términos y condiciones</a>
+                    </li>
+                    <li>
+                        <a href="#">Preguntas Frecuentes</a>
+                    </li>
+                    <li>
+                        <a href="#">RRHH</a>
+                    </li>
                   </ul>
-              </div>
+                </div>
             </div>
               <div class="foot__derechos">
-                  <h5>2022 - Todos los derechos reservados</h5>
+                  <h6>2022 - Todos los derechos reservados</h6>
               </div>
         </footer>
     </body>

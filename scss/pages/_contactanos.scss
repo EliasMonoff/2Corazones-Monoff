@@ -1,7 +1,5 @@
 .contact{
-    background-color: #A9D0F5;
-    font-family: 'Mukta', sans-serif;
-    background-image: url('/asset/images/image-backgund-contacto.jfif');
+    background-image: url('../asset/images/image-backgund-contacto.jfif');
     display: grid;
     justify-content: center;
     grid-template-areas: 
@@ -16,11 +14,19 @@
         justify-content: center;
         margin: 30px;
     }
-    &__title{
+
+    &__container{
         grid-area: title;
-        font-size: 40px;
-        color: $primary;
-        text-align: center;
+        
+        p{
+            font-size: 1.7em;
+            background-color: $light;
+            margin: 1.5em auto;
+        }
+    }
+
+    &__title{
+        @extend .title;
     }
     &__form{
         display: flex;
@@ -56,19 +62,7 @@
             @include radius(200px);
             margin: 15px 50px;
         }
-        &-map{
-            grid-area: map;
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-
-            iframe{
-                width: 60vw;
-                height: 30vh;
-                min-width: 250px;
-            }
-        }
+        
         &-checkbox{
             font-size: 16px;
         }

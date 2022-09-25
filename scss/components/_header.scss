@@ -1,48 +1,65 @@
-.grid__container-header{
+header{
     grid-area: header;
     background-color: rgb(17, 67, 133);
     position: sticky;
     top: 0;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
     z-index: 1;
     height: auto;
     min-height: 7vh;
     min-width: 320px;
 }
-.grid__container-logo{
-    height: 80px;
+.navbar{
+    background-color: rgb(17, 67, 133);
+
+    img{
+        height: 60px;
+    }
 }
-.grid__container-nav ul{
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-}
-.grid__container-nav ul li a{
-    font-family: sans-serif;
-    text-decoration: none;
-    background-color: $secondary;
-    padding: 8px;
-    color: rgba(227, 15, 15, 0.945);
-    @include radius(15px);
-    font-size: 24px;
-    margin-left: 24px;
-    transition: $transition;
-}
-.grid__container-nav ul li a:hover{
-    background-color: #767272;
-}
-.grid__container-finish a img{
-    height: 60px;
-    padding: 10px;
-}
-.grid__container-burger{
-    background: none;
-    border: none;
-}
-.grid__container-burger img{
-    height: 20px;
-    width: 20px;
-    display: none;
+.grid__container{
+    &-logo{
+        height: 60px;
+    }
+    &-nav{
+        ul{
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+        li{
+            @include radius(10px);
+            font-size: 1em;
+            margin-left: 10px;
+            transition: $transition;
+    
+            &:hover{
+                background-color: $light;
+            }
+            &:last-child{
+                background-color: #00aaff88;
+                border-radius: 0;
+                margin-left: 30px;
+                transition: $transition;
+
+                &:hover{
+                    transform: scale(1.1)
+                }
+            }
+        }
+    }
+    &-finish{
+        img{
+            height: 60px;
+            padding: 10px;
+        }
+    }
+    &-burger{
+        background: none;
+        border: none;
+
+        img{
+            height: 20px;
+            width: 20px;
+            display: none;
+        }
+    }
 }
