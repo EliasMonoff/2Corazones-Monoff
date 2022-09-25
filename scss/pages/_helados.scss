@@ -1,58 +1,61 @@
-.main__helados{
+.main__ice{
     background-image: url('../asset/images/image-background-helado.jfif');
     background-size: cover;
     background-position: center;
-}
-.main__ice-cream{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 50px 100px;
-    text-align: center;
-}
-.main__ice-cream-title{
-    margin: 20px 0;
-    background-color: $light;
-    text-align: center;
-    font-size: 2.5em;
-}
-.main__ice-cream-box{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 20px;
-}
-.main__ice-cream button{
-    background-color: rgb(72, 179, 90);
-    color: $secondary;
-    margin: 20px auto;
-    width: 150px;
-    height: 30px;
-    border: 1px solid rgb(30, 99, 41);
-    border-radius: 20px;
-    transition: $transition;
 
-    &:active{
-        transform: scale(0.9);
+    &-title{
+        @extend .title;
     }
-}
-.main__ice-cream small{
-    background-color: #f4ece0dc;
-    font-size: 17px;
-    padding: 5px;
-    border-radius: 20px;
-    font-family:'Tiro Tamil', serif;
-}
-.main__ice-cream-box img{
-    height: 220px;
-    width: 300px;
-    min-width: 70px;
-    margin-top: 10px;
-    border: 5px solid black;
-    border-radius: 10px;
-    transition: $transition;
 
-    &:hover{
-        transform: scale(1.1);
+    &-cream{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 50px 100px;
+        text-align: center;
+    
+        &-box{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 20px;
+    
+            button{
+                background-color: rgb(72, 179, 90);
+                color: $secondary;
+                margin: 20px auto;
+                width: 150px;
+                height: 30px;
+                border: 1px solid rgb(30, 99, 41);
+                border-radius: 20px;
+                transition: $transition;
+            
+                &:active{
+                    transform: scale(0.9);
+                }
+            }
+            
+            small{
+                background-color: #f4ece0dc;
+                font-size: 17px;
+                padding: 5px;
+                border-radius: 20px;
+                font-family:'Tiro Tamil', serif;
+            }
+    
+            img{
+                height: 220px;
+                width: 300px;
+                min-width: 70px;
+                margin-top: 10px;
+                border: 5px solid black;
+                border-radius: 10px;
+                transition: $transition;
+            
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+        }
     }
 }

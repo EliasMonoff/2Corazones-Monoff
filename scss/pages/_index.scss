@@ -1,13 +1,6 @@
 .body__index{
     background-image: url('../asset/images/image-background-index.jpg');
 }
-h1{
-    text-align: center;
-    font-size: 65px;
-    background-color: $light;
-    color: $primary;
-    margin: 15px 0;
-}
 .grid__container{
     display: grid;
     grid-template-areas:
@@ -17,6 +10,13 @@ h1{
     "order"
     "footer";
 
+    &-title{
+        text-align: center;
+        font-size: 3.5em;
+        background-color: $light;
+        color: $primary;
+        margin: 15px 0;
+    }
     &-galery{
         grid-area: galery;
     }
@@ -102,17 +102,15 @@ h1{
     &__title{
         color: $primary;
         text-align: center;
-        font-size: 1.5em;
-        margin-bottom: 2em;
+        font-size: 2em;
+        margin-bottom: 1em;
     }
     &__btn{
+        margin-top: 0; 
         @extend .botones;
-
+        font-size: 1.2em;
         a{
             color: $secondary;
-        }
-        &:hover{
-            background-color: rgba(0, 170, 255, 0.818);
         }
     }
 }

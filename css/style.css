@@ -21,7 +21,7 @@ ul {
 a {
   text-decoration: none; }
 
-.botones, .order__btn, .card__content-box button, .contact__form-button input {
+.botones, .order__btn, .location__form button, .card__content-box button, .contact__form-button input {
   margin: 20px;
   padding: 4px;
   color: #fff;
@@ -32,6 +32,15 @@ a {
   font-size: 15px;
   box-shadow: 3px 3px rgba(247, 125, 10, 0.789);
   transition: all 0.3s; }
+  .botones:hover, .order__btn:hover, .location__form button:hover, .card__content-box button:hover, .contact__form-button input:hover {
+    background-color: rgba(0, 170, 255, 0.818); }
+
+.title, .main__ice-title, .location__title, .card__title, .contact__title {
+  background-color: #f4ece05c;
+  font-size: 3em;
+  margin: 1em 0;
+  color: #2e2e2e;
+  text-align: center; }
 
 header {
   grid-area: header;
@@ -62,7 +71,7 @@ header {
   margin-left: 10px;
   transition: all 0.3s; }
   .grid__container-nav li:hover {
-    background-color: #f4ece046; }
+    background-color: #f4ece05c; }
   .grid__container-nav li:last-child {
     background-color: #00aaff88;
     border-radius: 0;
@@ -86,16 +95,15 @@ header {
 .body__index {
   background-image: url("../asset/images/image-background-index.jpg"); }
 
-h1 {
-  text-align: center;
-  font-size: 65px;
-  background-color: #f4ece046;
-  color: #610B21;
-  margin: 15px 0; }
-
 .grid__container {
   display: grid;
   grid-template-areas: "header" "galery" "article" "order" "footer"; }
+  .grid__container-title {
+    text-align: center;
+    font-size: 3.5em;
+    background-color: #f4ece05c;
+    color: #610B21;
+    margin: 15px 0; }
   .grid__container-galery {
     grid-area: galery; }
   .grid__container-article {
@@ -160,17 +168,18 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #f4ece046;
+  background-color: #f4ece05c;
   margin-bottom: 50px; }
   .order__title {
     color: #610B21;
     text-align: center;
-    font-size: 1.5em;
-    margin-bottom: 2em; }
-  .order__btn a {
-    color: #fff; }
-  .order__btn:hover {
-    background-color: rgba(0, 170, 255, 0.818); }
+    font-size: 2em;
+    margin-bottom: 1em; }
+  .order__btn {
+    margin-top: 0;
+    font-size: 1.2em; }
+    .order__btn a {
+      color: #fff; }
 
 .item-1 {
   background-image: url("../asset/images/inicio1.jfif"); }
@@ -193,108 +202,75 @@ h1 {
 .item-7 {
   background-image: url("../asset/images/inicio7.jpg"); }
 
-.main__helados {
+.main__ice {
   background-image: url("../asset/images/image-background-helado.jfif");
   background-size: cover;
   background-position: center; }
+  .main__ice-cream {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 50px 100px;
+    text-align: center; }
+    .main__ice-cream-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 20px; }
+      .main__ice-cream-box button {
+        background-color: #48b35a;
+        color: #fff;
+        margin: 20px auto;
+        width: 150px;
+        height: 30px;
+        border: 1px solid #1e6329;
+        border-radius: 20px;
+        transition: all 0.3s; }
+        .main__ice-cream-box button:active {
+          transform: scale(0.9); }
+      .main__ice-cream-box small {
+        background-color: #f4ece0dc;
+        font-size: 17px;
+        padding: 5px;
+        border-radius: 20px;
+        font-family: 'Tiro Tamil', serif; }
+      .main__ice-cream-box img {
+        height: 220px;
+        width: 300px;
+        min-width: 70px;
+        margin-top: 10px;
+        border: 5px solid black;
+        border-radius: 10px;
+        transition: all 0.3s; }
+        .main__ice-cream-box img:hover {
+          transform: scale(1.1); }
 
-.main__ice-cream {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  padding: 50px 100px;
-  text-align: center; }
-
-.main__ice-cream-title {
-  margin: 20px 0;
-  background-color: #f4ece046;
-  text-align: center;
-  font-size: 2.5em; }
-
-.main__ice-cream-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-bottom: 20px; }
-
-.main__ice-cream button {
-  background-color: #48b35a;
-  color: #fff;
-  margin: 20px auto;
-  width: 150px;
-  height: 30px;
-  border: 1px solid #1e6329;
-  border-radius: 20px;
-  transition: all 0.3s; }
-  .main__ice-cream button:active {
-    transform: scale(0.9); }
-
-.main__ice-cream small {
-  background-color: #f4ece0dc;
-  font-size: 17px;
-  padding: 5px;
-  border-radius: 20px;
-  font-family: 'Tiro Tamil', serif; }
-
-.main__ice-cream-box img {
-  height: 220px;
-  width: 300px;
-  min-width: 70px;
-  margin-top: 10px;
-  border: 5px solid black;
-  border-radius: 10px;
-  transition: all 0.3s; }
-  .main__ice-cream-box img:hover {
-    transform: scale(1.1); }
-
-.prom {
-  background-image: url("/asset/images/image-background-promociones.jpg"); }
-
-.prom__title {
-  font-size: 40px;
-  color: rgba(0, 0, 0, 0.6);
-  background-color: aquamarine;
-  font-family: 'Tiro Tamil', serif;
-  text-align: center; }
-
-.table {
-  margin-top: 50px;
-  margin-left: auto;
-  margin-right: auto;
-  border-collapse: collapse;
-  margin-bottom: 50px; }
-
-td {
-  text-align: center; }
-
-.table th, td {
-  padding: 10px 20px 10px 20px;
-  font-family: 'Mukta', sans-serif; }
-
-.table__head {
-  background-color: #04427c;
-  color: #fff; }
-
-.table__head th {
-  padding: 10px 150px 10px 150px; }
-
-.table__body-1 {
-  background-color: #bebebe; }
-
-.table__body-2 {
-  background-color: grey; }
+.location {
+  background-image: url("../asset/images/image-background-sucursales.jpg"); }
+  .location__parraf {
+    font-size: 2em;
+    text-align: center;
+    color: #2e2e2e; }
+  .location__form {
+    background-color: #f4ece05c;
+    width: 620px;
+    margin: 2em auto;
+    text-align: center; }
+    .location__form button {
+      font-size: 0.8em; }
+    .location__form input {
+      height: 30px; }
+    .location__form select {
+      font-size: 0.8em; }
+  .location__map {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
 
 .card {
   background-image: url("../asset/images/image-background-promociones.jfif");
   background-size: cover;
-  background-position: center;
-  font-family: sans-serif; }
-  .card__title {
-    text-align: center;
-    font-size: 3em;
-    margin: 1rem 0;
-    color: #610B21;
-    background-color: #f4ece046; }
+  background-position: center; }
   .card__content {
     display: flex;
     justify-content: space-around;
@@ -330,8 +306,6 @@ td {
           background-color: #00aaffd7; }
 
 .contact {
-  background-color: #A9D0F5;
-  font-family: 'Mukta', sans-serif;
   background-image: url("../asset/images/image-backgund-contacto.jfif");
   display: grid;
   justify-content: center;
@@ -341,15 +315,12 @@ td {
     display: flex;
     justify-content: center;
     margin: 30px; }
-  .contact__title {
-    grid-area: title;
-    text-align: center; }
-    .contact__title h1 {
-      font-size: 2em;
-      color: #610B21; }
-    .contact__title p {
-      font-size: 1.2em;
-      background-color: #f4ece046; }
+  .contact__container {
+    grid-area: title; }
+    .contact__container p {
+      font-size: 1.7em;
+      background-color: #f4ece05c;
+      margin: 1.5em auto; }
   .contact__form {
     display: flex;
     flex-direction: column;
@@ -379,16 +350,6 @@ td {
       border: none;
       border-radius: 200px;
       margin: 15px 50px; }
-    .contact__form-map {
-      grid-area: map;
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center; }
-      .contact__form-map iframe {
-        width: 60vw;
-        height: 30vh;
-        min-width: 250px; }
     .contact__form-checkbox {
       font-size: 16px; }
     .contact__form-button input:hover {
@@ -453,14 +414,6 @@ footer {
   .grid__container-logo {
     height: 60px;
     padding: 0; }
-  .grid__container-burger {
-    background: none;
-    border: none;
-    padding: 0 40px; }
-  .grid__container-burger img {
-    height: 20px;
-    width: 20px;
-    display: block; }
   h1 {
     font-size: 50px; }
   .galery__column-item {
