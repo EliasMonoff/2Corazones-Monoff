@@ -68,7 +68,7 @@
 .article{
     @include templateGrid(2);
     margin: 100px auto;
-    background-color: #f4ece046;
+    background-color: $light;
 
     &__item{
         width: 50%;
@@ -100,38 +100,39 @@
     margin-bottom: 50px;
 
     &__title{
-        color: $primary;
         text-align: center;
         font-size: 2em;
         margin-bottom: 1em;
     }
-    &__btn{
-        margin-top: 0; 
+    &__btn{ 
         @extend .botones;
+        margin-top: 0;
         font-size: 1.2em;
         a{
             color: $secondary;
         }
     }
 }
-.item-1{
-    background-image: url('../asset/images/inicio1.jfif');
-}
-.item-2{
-    background-image: url('../asset/images/inicio2.jfif');
-}
-.item-3{
-    background-image: url('../asset/images/inicio3.jfif');
-}
-.item-4{
-    background-image: url('../asset/images/inicio4.jpg');
-}
-.item-5{
-    background-image: url('../asset/images/inicio5.jpg');
-}
-.item-6{
-    background-image: url('../asset/images/inicio6.jpg');
-}
-.item-7{
-    background-image: url('../asset/images/inicio7.jpg');
+.item{
+    &-1{
+        background-image: url('../asset/images/inicio1.jfif');
+    }
+    &-2{
+        background-image: url('../asset/images/inicio2.jfif');
+    }
+    &-3{
+        background-image: url('../asset/images/inicio3.jfif');
+    }
+    &-4{
+        background-image: url('../asset/images/inicio4.jpg');
+    }
+    &-5{
+        background-image: url('../asset/images/inicio5.jpg');
+    }
+    &-6{
+        background-image: url('../asset/images/inicio6.jpg');
+    }
+    &-7{
+        background-image: url('../asset/images/inicio7.jpg');
+    }
 }

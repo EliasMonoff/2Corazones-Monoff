@@ -1,4 +1,4 @@
-@media (max-width: 1550px){
+@media (max-width: 1710px){
     .article{
         display: flex;
         flex-direction: column;
@@ -6,107 +6,195 @@
         margin: 50px auto;
 
         &__item-2 img{
-            margin-top: 20px;
+            margin: 20px auto;
             min-width: 320px;
         }
     }
 }
 @media (max-width: 1124px){
-    .grid__container-header{
-        height: 60px;
-        justify-content: space-between;
-    }
-    .grid__container-logo{
-        height: 60px;
-        padding: 0;
-    }
-    h1{
-        font-size: 50px;
+    .grid__container{
+        &-header{
+            height: 60px;
+            justify-content: space-between;
+        }
+        &-logo{
+            height: 60px;
+            padding: 0;
+        }
+        &-title{
+            font-size: 50px;
+        }
+
     }
     .galery__column-item{
         width: 90%;
     }
-    .article__title{
-        font-size: 25px;
-        margin-bottom: 10px;
+    .article{
+        &__title{
+            font-size: 25px;
+            margin-bottom: 10px;
+        }
+        &__content{
+            font-size: 18px;
+        }
     }
-    .article__content{
-        font-size: 18px;
+}
+@media (max-width: 992px) {
+    .grid__container-nav{
+        li{
+            margin: 0;
+
+            &:last-child{
+                margin: 0;
+                padding: 0 20px;
+            }
+        }
+    }
+    .order__title{
+        font-size: 1.5em;
+    }
+    .main__ice-title{
+        font-size: 2em;
+        margin: 20px 0;
+    }
+    .contact{
+        &__title{
+            font-size: 2em;
+        }
+        p{
+            font-size: 1.5em;
+        }
+    }
+}
+@media (max-width: 800px) {
+    .main__ice{
+        background-size: contain;
+        background-position: top;
     }
 }
 @media (max-width: 768px) {
-    .grid__container-header{
+    .grid__container{
+        &-header{
         height: 40px;
+        }
+        &-title{
+            font-size: 40px;
+        }
     }
     .navbar-brand img{
         height: 40px;
-    }
-    h1{
-        font-size: 40px;
     }
     .body__helados{
         background-size: auto;
         background-position: top;
     }
-    .foot__title{
-        padding-top: 0px;
+    .foot{
+        &__title{
+            padding-top: 0px;
+        }
+        &__redes{
+            img{
+                width: 30px;
+                height: 30px;
+                margin: 20px;
+            }
+        }
+        &__info-links{
+            padding-bottom: 15px;
+
+            li{
+                margin: 10px; 
+            }
+        }
     }
-    .foot__redes img{
-        width: 30px;
-        height: 30px;
-        margin: 20px;
-    }
-    .foot__info-links{
-        padding-bottom: 15px;
-    }
-    .foot__info-links li{
-        margin: 10px; 
-    }
-    .article__title{
-        font-size: 18px;
-    }
-    .article__content{
-        font-size: 14px;
+    .article{
+        &__item{
+            width: 90%;
+        }
+        &__title{
+            font-size: 20px;
+            margin-top: 10px;
+        }
+        &__content{
+            font-size: 16px;
+        }
     }
 }
 @media (max-width: 650px) {
     .main__ice-cream{
         padding: 50px 0;
     }
+    .location{
+        &__title{
+            font-size: 2em;
+        }
+        &__parraf{
+            font-size: 1.5em;
+        }
+        &__form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 400px;
+        }
+        &__map{
+            iframe{
+                width: 100%;
+            }
+        }
+    }
     .card__title{
         font-size: 2em;
     }
-    .contact__form-datos{
-        font-size: 12px;
-        margin: 0 10px 20px 10px;
-    }
-    .contact__form-datos input{
-        width: 150px;
-        height: 30px;
-    }
-    textarea{
-        height: 150px;
-        font-size: 12px;
-    }
-    .contact__form-checkbox{
-        font-size: 12px;
-    }
-    .foot__info-links li{
-       font-size: 12px;
+    .contact__form{
+        &-datos{
+            font-size: 12px;
+            margin: 0 10px 20px 10px;
+    
+            input{
+                width: 150px;
+                height: 30px;
+            }
+        }
+        &-checkbox{
+            font-size: 12px;
+        }
+        textarea{
+            height: 150px;
+            font-size: 12px;
+        }
     }
     .foot__info{
         padding-top: 5px;
+
+        &-links{
+            li{
+                font-size: 12px;
+            }
+        }
     }
 }
 @media (max-width: 480px) {
-    h1{
+    .grid__container-title{
         font-size: 30px;
     }
     .galery__column-item h3{
         font-size: 1em;
     }
     .order__title{
-        font-size: 1em;
+        font-size: 1.3em;
+    }
+    .location__form{
+        width: 300px;
+    }
+    .contact{
+        &__title{
+            font-size: 1.7em;
+        }
+        p{
+            font-size: 1.2em;
+            margin-bottom: 0;
+        }
     }
     .foot__info{
         padding-top: 0;
@@ -116,57 +204,56 @@
     .main__ice-cream{
         padding: 20px 0;
     }
-    .contact__form{
-        width: 200px;
-    }
-    .contact__title{
-        h1{
-        font-size: 1.5em;
+    .contact{
+        &__form{
+            width: 200px;
+
+            &-datos{
+                font-size: 12px;
+                margin: 0 8px 15px px;
+
+                input{
+                    width: 150px;
+                    height: 20px;
+                }
+            }
         }
-        p{
-            font-size: 1em;
+        &__title{
+           h1{
+                font-size: 1.5em;
+           }
+           p{
+                font-size: 1em;
+           }
         }
-    }
-    .contact__form-datos{
-        font-size: 12px;
-        margin: 0 8px 15px px;
-    }
-    .contact__form-datos input{
-        width: 150px;
-        height: 20px;
     }
     textarea{
         height: 150px;
         font-size: 12px;
     }
-    .article__title{
-        font-size: 14px;
-    }
-    .article__content{
-        font-size: 12px;
-    }
 }
 @media (max-width: 370px) {
-    .grid__container-burger{
-        padding: 0 10px;
-    }
     .galery__column-item{
         height: 150px;
         font-size: 12px;
     }
-    .foot__title{
-        font-size: 10px;
-    }
-    .foot__info{
-        padding-top: 10px;
-        font-size: 10px;
-    }
-    .foot__redes img{
-        width: 20px;
-        height: 20px;
-        margin: 20px 10px;
-    }
-    .foot__derechos {
-        font-size: 10px;
+    .foot{
+        &__title{
+            font-size: 10px;
+        }
+        &__info{
+            padding-top: 10px;
+            font-size: 10px;
+        }
+        &__redes{
+            img{
+                width: 20px;
+                height: 20px;
+                margin: 20px 10px;
+            }
+        }
+        &__derechos{
+            font-size: 10px;
+        }
     }
 }

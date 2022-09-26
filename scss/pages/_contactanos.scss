@@ -19,9 +19,24 @@
         grid-area: title;
         
         p{
+            text-align: center;
             font-size: 1.7em;
             background-color: $light;
-            margin: 1.5em auto;
+            margin: 1.5em auto;    
+        }
+        &-wp{
+            background-color: #25d365d7;
+            color: $secondary;
+            padding: 0 4px;
+            border: 2px solid $secondary;
+            @include radius(10px);
+            transition: $transition;
+            
+            &:hover{
+                background-color: $secondary;
+                color: #25d365d7;
+                border: 2px solid #25d365d7;
+            }
         }
     }
 
@@ -68,18 +83,14 @@
         }
         &-button input{
             @extend .botones;
-
-            &:hover{
-                background-color: rgba(0, 170, 255, 0.818);
-            }
+        }
+        textarea{
+            width: 30vw;
+            height: 25vh;
+            min-width: 150px;
+            resize: none;
+            font-family: 'Manrope', sans-serif;
+            padding-left: 5px;
         }
     }
-}
-textarea{
-    width: 30vw;
-    height: 25vh;
-    min-width: 150px;
-    resize: none;
-    font-family: 'Manrope', sans-serif;
-    padding-left: 5px;
 }
