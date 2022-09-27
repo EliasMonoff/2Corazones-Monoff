@@ -77,11 +77,9 @@
             background-color: #f4ece0c2;
         }
         &-card{
-            display: flex;
-            flex-wrap: wrap;
+            @include templateFlex(center, false, true);
             gap: 10px;
-            justify-content: center;
-
+            
             div{
                 width: 20%;
                 min-width: 120px;

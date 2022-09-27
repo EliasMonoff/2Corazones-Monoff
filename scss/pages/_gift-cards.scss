@@ -7,16 +7,12 @@
         @extend .title;
     }
     &__content{
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
+        @include templateFlex(space-around, false, true);
         min-width: 300px;
 
         &-box{
             background-color: #f4ece0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            @include flexColumn(column);
             text-align: center;
             width: 30%;
             min-width: 300px;

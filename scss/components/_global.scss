@@ -57,3 +57,19 @@ a{
 @mixin radius($radius) {
     border-radius: $radius;
 }
+@mixin templateFlex($justValue, $align, $wrap){
+    display: flex;
+    justify-content: $justValue;
+
+    @if ($align == true) {
+        align-items: center;
+    }
+    @if($wrap == true) {
+        flex-wrap: wrap;
+    }
+}
+@mixin flexColumn($col) {
+    display: flex;
+    flex-direction: $col;
+    align-items: center;
+}

@@ -1,3 +1,24 @@
+.foot__redes-instagram {
+  transition: all 0.3s; }
+  .foot__redes-instagram:hover {
+    background-color: #c92d8f;
+    width: 50px;
+    height: auto; }
+
+.foot__redes-facebook {
+  transition: all 0.3s; }
+  .foot__redes-facebook:hover {
+    background-color: #2279e4;
+    width: 50px;
+    height: auto; }
+
+.foot__redes-twitter {
+  transition: all 0.3s; }
+  .foot__redes-twitter:hover {
+    background-color: #55acee;
+    width: 50px;
+    height: auto; }
+
 * {
   margin: 0;
   padding: 0;
@@ -264,9 +285,9 @@ header {
     background-color: #f4ece0c2; }
   .sab__content-card {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center; }
+    gap: 10px; }
     .sab__content-card div {
       width: 20%;
       min-width: 120px;
@@ -430,6 +451,8 @@ footer {
     display: flex;
     justify-content: center;
     padding-bottom: 30px; }
+    .foot__redes a {
+      padding: 20px 5px; }
     .foot__redes img {
       width: 40px;
       height: 40px;

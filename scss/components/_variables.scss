@@ -3,3 +3,21 @@ $secondary: #fff;
 $wp: #25d365d7;
 $light: #f4ece05c;
 $transition: all 0.3s;
+
+$iconSocialMedia:(
+    instagram: #c92d8f,
+    facebook: #2279e4,
+    twitter: #55acee,
+);
+
+@each $nameSocialMedia, $colorIcon in $iconSocialMedia {
+    .foot__redes-#{$nameSocialMedia} {
+        transition: $transition;
+
+        &:hover {
+            background-color: $colorIcon;
+            width: 50px;
+            height: auto;
+        }
+    }
+}
