@@ -43,6 +43,13 @@ a{
     color: #2e2e2e;
     text-align: center;
 }
+.bg-ice{
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
 @mixin templateGrid($columns) {
     display: grid;
     grid-template-columns: repeat($columns, 1fr);

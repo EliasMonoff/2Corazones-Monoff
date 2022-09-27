@@ -38,6 +38,14 @@
             font-size: 18px;
         }
     }
+    .sab{
+        &__title{
+            font-size: 2em;
+        }
+        p{
+            font-size: 1.2em;
+        }
+    }
 }
 @media (max-width: 992px) {
     .grid__container-nav{

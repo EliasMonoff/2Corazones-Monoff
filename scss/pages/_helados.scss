@@ -1,10 +1,9 @@
 .main__ice{
-    background-image: url('../asset/images/image-background-helado.jfif');
-    background-size: cover;
-    background-position: center;
+    background-image: url('../asset/images/background-helados.jpg');
 
     &-title{
         @extend .title;
+        background-color: #f4ece0c2;
     }
 
     &-cream{
@@ -58,4 +57,62 @@
             }
         }
     }
+}
+.sab{
+    text-align: center;
+
+    &__title{
+        @extend .title;
+        background-color: #f4ece0c2;
+    }
+    p{
+        background-color: #f4ece09f;
+        font-size: 1.5em;
+        margin-bottom: 40px;
+    }
+    &__content{
+        &-title{
+            font-size: 1.5em;
+            margin-bottom: 30px;
+            background-color: #f4ece0c2;
+        }
+        &-card{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+
+            div{
+                width: 20%;
+                min-width: 120px;
+                height: 100px;
+                background-color: #f4ece0c2;
+                @include radius(10px);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        &-choc{
+            background-image: url('../asset/images/background-helado-chocolate.webp');
+            @extend .bg-ice;
+        }
+        &-dl{
+            background-image: url('../asset/images/bg-dl.jpg');
+            @extend .bg-ice;
+        }
+        &-cream{
+            background-image: url('../asset/images/bg-cream.jpg');
+            @extend .bg-ice;
+        }
+        &-veg{
+            background-image: url('../asset/images/bg-veg.jpg');
+            @extend .bg-ice;
+        }
+        &-light{
+            background-image: url('../asset/images/bg-light.jpg');
+            @extend .bg-ice;
+        }
+    }
+
 }

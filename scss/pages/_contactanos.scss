@@ -25,7 +25,7 @@
             margin: 1.5em auto;    
         }
         &-wp{
-            background-color: #25d365d7;
+            background-color: $wp;
             color: $secondary;
             padding: 0 4px;
             border: 2px solid $secondary;
@@ -34,8 +34,8 @@
             
             &:hover{
                 background-color: $secondary;
-                color: #25d365d7;
-                border: 2px solid #25d365d7;
+                color: $wp;
+                border: 2px solid  $wp;
             }
         }
     }
