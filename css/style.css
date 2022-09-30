@@ -75,8 +75,6 @@ header {
   position: sticky;
   top: 0;
   z-index: 1;
-  height: auto;
-  min-height: 7vh;
   min-width: 320px; }
 
 .navbar {
@@ -317,6 +315,7 @@ header {
   .location__form {
     background-color: #f4ece05c;
     width: 620px;
+    font-size: calc(1.275rem + .3vw);
     margin: 2em auto;
     text-align: center; }
     .location__form button {
@@ -432,6 +431,7 @@ header {
       width: 30vw;
       height: 25vh;
       min-width: 150px;
+      max-width: 980px;
       resize: none;
       font-family: 'Manrope', sans-serif;
       padding-left: 5px; }
