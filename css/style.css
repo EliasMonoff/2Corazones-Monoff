@@ -586,8 +586,6 @@ footer {
 @media (max-width: 650px) {
   .galery__column h2 {
     font-size: 1em; }
-  .main__ice-cream {
-    padding: 50px 0; }
   .location__title {
     font-size: 2em; }
   .location__parraf {
