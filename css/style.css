@@ -125,10 +125,10 @@ header {
   grid-template-areas: "header" "galery" "article" "order" "footer"; }
   .grid__container-title {
     text-align: center;
-    font-size: 3.5em;
+    font-size: 5em;
     background-color: #f4ece05c;
     color: #2e2e2e;
-    margin: 15px 0; }
+    margin: 50px 0; }
   .grid__container-galery {
     grid-area: galery; }
   .grid__container-article {
@@ -164,6 +164,8 @@ header {
       .galery__column-item:hover {
         transform: scale(1.03); }
       .galery__column-item h2 {
+        font-size: 3em;
+        text-shadow: 0.1em 0.1em 0.2em #2e2e2e;
         background: linear-gradient(#000, rgba(0, 0, 0, 0) 25px); }
 
 .article {
@@ -183,10 +185,10 @@ header {
     min-width: 600px;
     border-radius: 10px; }
   .article__title {
-    font-size: 2em;
+    font-size: 3.5em;
     margin-bottom: 1.2em; }
   .article__content {
-    font-size: 1.5em; }
+    font-size: 2.5em; }
 
 .order {
   display: flex;
@@ -474,6 +476,29 @@ footer {
     color: #fff;
     font-size: 0.83em; }
 
+@media (max-width: 2776px) {
+  .article__title {
+    font-size: 3em; }
+  .article__content {
+    font-size: 2em; } }
+
+@media (max-width: 2379px) {
+  .article__title {
+    font-size: 2.5em; }
+  .article__content {
+    font-size: 1.8em; } }
+
+@media (max-width: 2030px) {
+  .article__title {
+    font-size: 2em; }
+  .article__content {
+    font-size: 1.5em; }
+  .grid__container-title {
+    font-size: 4em;
+    margin: 25px 0; }
+  .galery__column h2 {
+    font-size: 2.5em; } }
+
 @media (max-width: 1710px) {
   .article {
     display: flex;
@@ -482,7 +507,9 @@ footer {
     margin: 50px auto; }
     .article__item-2 img {
       margin: 20px auto;
-      min-width: 320px; } }
+      min-width: 320px; }
+  .galery__column h2 {
+    font-size: 2em; } }
 
 @media (max-width: 1124px) {
   .grid__container-header {
@@ -495,6 +522,8 @@ footer {
     font-size: 50px; }
   .galery__column-item {
     width: 90%; }
+  .galery__column h2 {
+    font-size: 1.3em; }
   .article__title {
     font-size: 25px;
     margin-bottom: 10px; }
@@ -555,6 +584,8 @@ footer {
     font-size: 16px; } }
 
 @media (max-width: 650px) {
+  .galery__column h2 {
+    font-size: 1em; }
   .main__ice-cream {
     padding: 50px 0; }
   .location__title {
