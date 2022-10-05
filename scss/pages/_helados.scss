@@ -1,5 +1,5 @@
 .main__ice{
-    background-image: url('../asset/images/background-helados.jpg');
+    background-image: url('../assets/images/background-helados.jpg');
 
     &-title{
         @extend .title;
@@ -92,23 +92,23 @@
             }
         }
         &-choc{
-            background-image: url('../asset/images/background-helado-chocolate.webp');
+            background-image: url('../assets/images/background-helado-chocolate.webp');
             @extend .bg-ice;
         }
         &-dl{
-            background-image: url('../asset/images/bg-dl.jpg');
+            background-image: url('../assets/images/bg-dl.jpg');
             @extend .bg-ice;
         }
         &-cream{
-            background-image: url('../asset/images/bg-cream.jpg');
+            background-image: url('../assets/images/bg-cream.jpg');
             @extend .bg-ice;
         }
         &-veg{
-            background-image: url('../asset/images/bg-veg.jpg');
+            background-image: url('../assets/images/bg-veg.jpg');
             @extend .bg-ice;
         }
         &-light{
-            background-image: url('../asset/images/bg-light.jpg');
+            background-image: url('../assets/images/bg-light.jpg');
             @extend .bg-ice;
         }
     }

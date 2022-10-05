@@ -118,7 +118,7 @@ header {
     display: none; }
 
 .body__index {
-  background-image: url("../asset/images/image-background-index.jpg"); }
+  background-image: url("../assets/images/image-background-index.jpg"); }
 
 .grid__container {
   display: grid;
@@ -208,28 +208,28 @@ header {
       color: #fff; }
 
 .item-1 {
-  background-image: url("../asset/images/inicio1.jfif"); }
+  background-image: url("../assets/images/inicio1.jfif"); }
 
 .item-2 {
-  background-image: url("../asset/images/inicio2.jfif"); }
+  background-image: url("../assets/images/inicio2.jfif"); }
 
 .item-3 {
-  background-image: url("../asset/images/inicio3.jfif"); }
+  background-image: url("../assets/images/inicio3.jfif"); }
 
 .item-4 {
-  background-image: url("../asset/images/inicio4.jpg"); }
+  background-image: url("../assets/images/inicio4.jpg"); }
 
 .item-5 {
-  background-image: url("../asset/images/inicio5.jpg"); }
+  background-image: url("../assets/images/inicio5.jpg"); }
 
 .item-6 {
-  background-image: url("../asset/images/inicio6.jpg"); }
+  background-image: url("../assets/images/inicio6.jpg"); }
 
 .item-7 {
-  background-image: url("../asset/images/inicio7.jpg"); }
+  background-image: url("../assets/images/inicio7.jpg"); }
 
 .main__ice {
-  background-image: url("../asset/images/background-helados.jpg"); }
+  background-image: url("../assets/images/background-helados.jpg"); }
   .main__ice-title {
     background-color: #f4ece0c2; }
   .main__ice-cream {
@@ -298,18 +298,18 @@ header {
       justify-content: center;
       align-items: center; }
   .sab__content-choc {
-    background-image: url("../asset/images/background-helado-chocolate.webp"); }
+    background-image: url("../assets/images/background-helado-chocolate.webp"); }
   .sab__content-dl {
-    background-image: url("../asset/images/bg-dl.jpg"); }
+    background-image: url("../assets/images/bg-dl.jpg"); }
   .sab__content-cream {
-    background-image: url("../asset/images/bg-cream.jpg"); }
+    background-image: url("../assets/images/bg-cream.jpg"); }
   .sab__content-veg {
-    background-image: url("../asset/images/bg-veg.jpg"); }
+    background-image: url("../assets/images/bg-veg.jpg"); }
   .sab__content-light {
-    background-image: url("../asset/images/bg-light.jpg"); }
+    background-image: url("../assets/images/bg-light.jpg"); }
 
 .location {
-  background-image: url("../asset/images/image-background-sucursales.jpg"); }
+  background-image: url("../assets/images/image-background-sucursales.jpg"); }
   .location__parraf {
     font-size: 2em;
     text-align: center;
@@ -333,7 +333,7 @@ header {
     margin-bottom: 20px; }
 
 .card {
-  background-image: url("../asset/images/image-background-promociones.jfif");
+  background-image: url("../assets/images/image-background-promociones.jfif");
   background-size: cover;
   background-position: center; }
   .card__content {
@@ -371,7 +371,7 @@ header {
           background-color: #00aaffd7; }
 
 .contact {
-  background-image: url("../asset/images/image-backgund-contacto.jfif");
+  background-image: url("../assets/images/image-backgund-contacto.jfif");
   display: grid;
   justify-content: center;
   grid-template-areas: "title title title" "form  form  form" "form  form  form" "map   map   map"; }
